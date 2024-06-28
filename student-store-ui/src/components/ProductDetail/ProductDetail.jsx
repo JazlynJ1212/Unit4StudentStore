@@ -5,12 +5,38 @@ import NotFound from "../NotFound/NotFound";
 import { formatPrice } from "../../utils/format";
 import "./ProductDetail.css";
 
+
+
 function ProductDetail({ addToCart, removeFromCart, getQuantityOfItemInCart }) {
   
   const { productId } = useParams();
   const [product, setProduct] = useState(null);
   const [isFetching, setIsFetching] = useState(false);
   const [error, setError] = useState(null);
+
+
+//fetch product details and update the product state
+const dataUrl = `http://localhost:3000/products/${productId}`; 
+const fetchProductDetails = async (params = {}) => {
+  setIsFetching(true);
+  try {
+    const response = await axios.get(`${dataUrl}`);
+    console.log("Fetched Product Details:", response.data); // Log the response data
+    setProduct(response.data);
+  } catch (error) {
+    console.error("Error fetching products:", error);
+    setProduct([]); // Set to empty array on error
+  } finally {
+    setIsFetching(false);
+  }
+};
+
+// useEffect to fetch products on component mount
+useEffect(() => {
+  fetchProductDetails();
+}, []); // Empty dependency array ensures this runs once on mount
+
+
 
 
   if (error) {
