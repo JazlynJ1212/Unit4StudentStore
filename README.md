@@ -54,7 +54,17 @@ Submitted by: **Jazlyn Jones**
 
 `TODO://` Add the embedded URL code to your animated app walkthrough below, `ADD_EMBEDDED_CODE_HERE`. Make sure the video or gif actually renders and animates when viewing this README. (🚫 Remove this paragraph after adding walkthrough video)
 
-`ADD_EMBEDDED_CODE_HERE`
+<div>
+    <a href="https://www.loom.com/share/61240c4c93c04ea5b7305840f8d9456f">
+      <p>Library | Loom - 27 June 2024 - Watch Video</p>
+    </a>
+    <a href="https://www.loom.com/share/61240c4c93c04ea5b7305840f8d9456f">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/61240c4c93c04ea5b7305840f8d9456f-1719583844170-with-play.gif">
+    </a>
+  </div>
+
+
+  
 
 ### Reflection
 
@@ -76,7 +86,7 @@ My project demo went well, I was able to interact with the audience even though 
 ### Shout out
 
 Give a shout out to somebody from your cohort that especially helped you during your project. This can be a fellow peer, instructor, TA, mentor, etc.
-Kiahna, Bailey, Lucky, Sydney and Kenneth and Devarsh!
+Chris, Kiahna, Bailey, Lucky, Sydney and Kenneth and Devarsh!
 
 
 
